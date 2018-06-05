@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <title>Admissao - Escola Feliz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="./favicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/4.0/examples/carousel/carousel.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/4.1/examples/pricing/pricing.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/4.1/examples/checkout/form-validation.css" rel="stylesheet">
+    <style>
+      *{
+        font-family: 'Share Tech Mono', monospace;
+      }
+      body{
+        padding: 0 !important;
+      }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59483957-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-59483957-6');
+    </script>
+    <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0076/1844.js" async="async"></script>
+  </head>
+  <body class="bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand acessibilidade" href="./">
+      <img src="./favicon.png" width="30" height="30" class="d-inline-block align-top " alt="Logo da ESCOLA FELIZ">
+      Escola Feliz
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNav">
+      <ul class="navbar-nav mr-auto ">
+        <li class="nav-item active">
+          <a class="nav-link btn acessibilidade" href="./" title="Link para Tela ´Inicial´">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn acessibilidade" href="./nossahistoria.html" title="Link para Tela ´Nossa Historia´">Nossa Historia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn acessibilidade" href="./equipe.html" title="Link para Tela ´Equipe´">Equipe</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn acessibilidade" href="./trabalheconosco.html" title="Link para Tela ´Trabalhe Conosco´">
+            Trabalhe Conosco</a>
+        </li>
+      </ul>
+      <button class="btn btn-outline-success my-2 my-sm-0" onClick="fonte('a')">A+</button>
+      <button class="btn btn-outline-danger my-2 my-sm-0" onClick="fonte('d');">a-</button>
+    </div>
+  </nav>
+  <div class="container acessibilidade">
+    <div class="py-5">
+      <div class="row">
+        <div class="col">
+          <img class="d-block mx-auto mb-4" src="./favicon.png" alt="" width="72" height="72">
+        </div>
+        <div class="col">
+          <h2 class="acessibilidade">Formulário de Admissão</h2>
+        </div>
+      </div>
+      <p class="lead acessibilidade">
+        Mussum Ipsum, cacilds vidis litro abertis. Manduma pindureta quium dia nois paga. Pra lá , depois divoltis
+        porris, paradis. In elementis mé pra quem é amistosis quis leo. Admodum accumsan disputationi eu sit. Vide
+        electram sadipscing et per.
+      </p>
+
+      <div class="row">
+        <div class="col-md-4 order-md-2 mb-4"></div>
+        <div class="col-md-8 order-md-1">
+          <hr class="mb-4">
+          <h4 class="mb-3 acessibilidade">Perfil</h4>
+          <form class="needs-validation" novalidate>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="lastName">Tratamento </label>
+                <select class="form-control" id="lastName">
+                  <option>Sr.</option>
+                  <option>Sra.</option>
+                </select>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="firstName">Nome Completo</label>
+                <input type="text" class="form-control" title="Nome Completo" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="email">Email <span class="text-muted">Obrigatorio</span></label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="address2">Telefone<span class="text-muted">(Opcional)</span></label>
+              <input type="tel" class="form-control" id="address2" placeholder="Fixo ou Movel">
+            </div>
+            <div class="mb-3">
+              <label for="curriculo">Curriculo<span class="text-muted">(Obrigatorio)</span></label>
+              <input type="file" class="form-control" id="file" id="curriculo" required>
+            </div>
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block acessibilidade" type="submit">Submeter Curriculo</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">&copy; 2017-2018 Company Name</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacy</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Support</a></li>
+      </ul>
+    </footer>
+  </div>
+    <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/holder.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+            integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+            integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+            'use strict';
+
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+  <script src="./fonte.js"></script>
+  </body>
+</html>
